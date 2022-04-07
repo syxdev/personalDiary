@@ -1,0 +1,15 @@
+.register_all{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #4d61fc;
+}
+.register_form{
+    text-align: center;
+}
+.register_username{
+    margin-top: 20px;
+}
+.register_username_span{
+    float: left;
+}

@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>注册</title>
     <meta charset="UTF-8">
-    <title>zhuce</title>
+    <!-- style CSS -->
+    <link rel="stylesheet" href="/css/style.css" type="text/css" media="all">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css" media="all">
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
     <script>
         $(function () {
@@ -32,16 +36,44 @@
     </script>
 </head>
 <body>
-<div>
-    <div class="register_form">
-        用户名：<input type="text" name="username" id="username"><br>
-        密码：<input type="password" name="password" id="password"><br>
-        地址：<input type="text" name="address" id="address"><br>
-        电话：<input type="text" name="telephone" id="telephone"><br>
-        邮箱：<input type="text" name="email" id="email"><br>
-        <button id="register">注册</button>
-    </div>
-</div>
+    <section class="main">
+        <div class="bottom-grid">
+            <div class="logo">
+                <h1> <a href="index.html"> Personal Diary</a></h1>
+            </div>
+        </div>
+        <!-- register -->
+        <div class="w3lhny-register">
+            <form action ="#" method="post" class="register-form">
+                <fieldset>
+                    <div class="form">
 
+                            <input type="text" name="username" id="username" class="form-text" placeholder="用户名" required="true">
+
+
+                            <input type="password" name="password" id="password" class="form-text" placeholder="密码" required="true">
+
+                        <div class="form-row">
+                            <input type="text" name="address" id="address" class="form-text" placeholder="地址" required="">
+                        </div>
+                        <div class="form-row">
+                            <input type="text" name="telephone" id="telephone" class="form-text" placeholder="电话" required="">
+                        </div>
+                        <div class="form-row">
+                            <input type="email" name="email" id="email" class="form-text" placeholder="邮箱" required="">
+                        </div>
+                        <div class="form-row button-login">
+                            <button class="btn btn-login" id="register">注册</button>
+                        </div>
+                    </div>
+                </fieldset>
+                </form>
+                <p class="already">已有账户 <a href="#">登录</a></p>
+        </div>
+        <div class="w3l-copyright">
+            <p>© 2022 Workspace Sign Up Form. All rights reserved | Design by <a href="">Personal Diary</a>
+            </p>
+        </div>
+    </section>
 </body>
 </html>
