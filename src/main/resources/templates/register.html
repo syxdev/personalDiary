@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>zhuce</title>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <script>
+        $(function(){
+            $("#register").click(function () {
+                let data = {};
+                let username = $("#username").val();
+                let password = $("#password").val();
+                let address = $("#address").val();
+                let telephone = $("#telephone").val();
+                let email = $("#email").val();
+                $.ajax({
+                    type: "POST",
+                    url: "/register?username=" + username + "&password=" + password + "&address=" + address + "&telephone=" + telephone + "&email=" + email,
+                    contentType: "application/json;charset=utf-8",
+                    data: JSON.stringify(data),
+                    success: function (result) {
+                        if (result) {
+                            //$(location).attr('href', 'index.html');
+                            location.href = "index.html";
+                        } else {
+                            alert("注册失败");
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+<div>
+    <input type="text" name="id" id="id">
+    <input type="text" name="username" id="username"><br>
+    <input type="password" name="password" id="password"><br>
+    <input type="text" name="address" id="address"><br>
+    <input type="text" name="telephone" id="telephone"><br>
+    <input type="text" name="email" id="email"><br>
+    <button id="register">注册</button>
+</div>
+</body>
+</html>
