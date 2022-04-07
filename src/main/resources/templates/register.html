@@ -5,7 +5,7 @@
     <title>zhuce</title>
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
     <script>
-        $(function(){
+        $(function () {
             $("#register").click(function () {
                 let data = {};
                 let username = $("#username").val();
@@ -33,13 +33,15 @@
 </head>
 <body>
 <div>
-    <input type="text" name="id" id="id">
-    <input type="text" name="username" id="username"><br>
-    <input type="password" name="password" id="password"><br>
-    <input type="text" name="address" id="address"><br>
-    <input type="text" name="telephone" id="telephone"><br>
-    <input type="text" name="email" id="email"><br>
-    <button id="register">注册</button>
+    <div class="register_form">
+        用户名：<input type="text" name="username" id="username"><br>
+        密码：<input type="password" name="password" id="password"><br>
+        地址：<input type="text" name="address" id="address"><br>
+        电话：<input type="text" name="telephone" id="telephone"><br>
+        邮箱：<input type="text" name="email" id="email"><br>
+        <button id="register">注册</button>
+    </div>
 </div>
+
 </body>
 </html>
